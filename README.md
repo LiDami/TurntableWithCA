@@ -1,6 +1,6 @@
 # TurntableWithCA
 用核心动画实现一个转盘，just a small demo。
-
+![image](https://github.com/LiDami/TurntableWithCA/blob/master/未命名.gif)
 
 ### 1,搭建界面
 		把转盘View给封装起来. 由于界面是固定不变的,可以弄一个Xib展示界面.
@@ -77,7 +77,7 @@
 		
 		方法为:添加一个定时器, 每次在原来基础上添加一个旋转角度.
 		定时器我们只需要添加一次, 我们就采用懒加载的方法.我们采用CADisplayLink的方法.
-		因为这个定时器可以让它很方便的暂停,开始.
+		因为这个定时器可以让它很方便的暂停,开始，这就是与NSTimer的区别.
 `		
 		-(CADisplayLink *)link{
     
@@ -109,7 +109,8 @@
       
       可以通过当前按钮的transform求出当前按钮的旋转角度
       方法为:
-`      CGFloat angel = atan2(self.selectBtn.transform.b, self.selectBtn.transform.a);
+`      CGFloat angel = atan2(self.selectBtn.transform.b, self.selectBtn.transform.a);  
+* 解释：atan2函数，atan2(y,x)，x,y为坐标，获取角度
       
       -(void)animationDidStop:(nonnull CAAnimation *)anim finished:(BOOL)flag{
       
