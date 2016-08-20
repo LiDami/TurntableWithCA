@@ -1,6 +1,6 @@
 # TurntableWithCA
 用核心动画实现一个转盘，just a small demo。
-![image](https://github.com/LiDami/TurntableWithCA/blob/master/未命名.gif)
+![image](https://github.com/LiDami/TurntableWithCA/blob/master/show.gif)
 
 ### 1,搭建界面
 		把转盘View给封装起来. 由于界面是固定不变的,可以弄一个Xib展示界面.
